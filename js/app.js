@@ -1,8 +1,6 @@
-/* Treehouse FSJS Techdegree
- * Project 4 - OOP Game App
- * app.js */
 
-const logPhrase = (phrase) => {
+
+/*const logPhrase = (phrase) => {
     console.log(`Phrase - phrase: `, phrase.phrase);
     };
     const game = new Game();
@@ -11,3 +9,9 @@ const logPhrase = (phrase) => {
     logPhrase(game.getRandomPhrase());
     logPhrase(game.getRandomPhrase());
     logPhrase(game.getRandomPhrase());
+
+    const hello = new Phrase('HEllo')
+    console.log(hello)
+  */  
+    const game = new Game();
+game.getRandomPhrase().addPhraseToDisplay();

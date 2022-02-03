@@ -14,7 +14,6 @@ class Phrase {
         let phraseArr = [...this.phrase];
         const ul = document.querySelector('#phrase ul');
         
-        
         phraseArr.forEach(letter => {
             const li = document.createElement('li');
             if(letter !== ' ') {

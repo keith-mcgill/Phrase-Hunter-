@@ -13,5 +13,11 @@
     const hello = new Phrase('HEllo')
     console.log(hello)
   */  
-    const game = new Game();
+    /*const game = new Game();
 game.getRandomPhrase().addPhraseToDisplay();
+*/
+
+/*const game = new Game();
+game.startGame();
+console.log(`Active Phrase - phrase: ${game.activePhrase.phrase}`);
+*/

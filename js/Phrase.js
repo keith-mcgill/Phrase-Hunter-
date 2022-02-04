@@ -29,9 +29,29 @@ class Phrase {
 
             
         })
-        
+    };
 
+     /**
+    * Checks if passed letter is in phrase
+    * @param (string) letter - Letter to check
+    */
+      checkLetter(letter) {
+          return (this.phrase.includes(letter));
+      }
 
+      /**
+    * Displays passed letter on screen after a match is found
+    * @param (string) letter - Letter to display
+    */
+    showMatchedLetter(letter) {
+        const keyboardLetters = document.querySelectorAll('.hide');
+        //for loop that will check to see if the user selected letter matches, if true it will reveal letter on the board
+        for(let i = 0; i < keyboardLetters.length; i++) {
+            if(keyboardLetters[i].textContent === letter) {
+                keyboardLetters[i].classList.add('show');
+                keyboardLetters[i].classList.remove('hide');
+            }
+        }
     };
 
     

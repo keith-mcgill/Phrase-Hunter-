@@ -36,5 +36,6 @@ const keys = document.querySelectorAll('.key')
 for(const key of keys){
 key.addEventListener('click', (e) => {
     game.handleInteraction(e.target)
+    key.disabled = true;
 })
 }
